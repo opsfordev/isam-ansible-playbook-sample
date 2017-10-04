@@ -1,12 +1,12 @@
 # Set the Python interpreter path to use
-ansible_python_interpreter: /home/python/python2.7.13/bin/python
+ansible_python_interpreter: /bin/python
 
 # Use local connection for making all calls
 connection: local
 ansible_connection: local
 
 # Default LMI port for appliances
-lmi_port: 443
+lmi_port: 444
 
 # Logging set to maximum, output will not show until -vvv flag is used
 log_level: DEBUG

@@ -1,0 +1,5 @@
+appliance_name: mfa.demo.com
+password: "{{vault_password}}"
+
+ipv4_1_1_ip_address: 54.237.244.135
+ipv4_1_1_ip_mask: 24

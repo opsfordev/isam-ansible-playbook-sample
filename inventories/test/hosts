@@ -1,15 +1,15 @@
-[boulder-primary]
-54.91.146.203
+[dc1-primary]
+54.237.244.135
 
-[boulder-restricted]
-54.91.146.203
+[dc1-restricted]
+54.237.244.135
 
-[boulder:children]
-boulder-primary
-boulder-restricted
+[dc1:children]
+dc1-primary
+dc1-restricted
 
 [primary:children]
-boulder-primary
+dc1-primary
 
 [restricted:children]
-boulder-restricted
+dc1-restricted

@@ -44,22 +44,10 @@
     - role: set_host_records
       tags: ["host", "records"]
       set_host_records:
-      - addr: "192.168.198.144"
-        hostnames:
-        - {name: "isam1.ibm.com"}
-        - {name: "isam1"}
-      - addr: "192.168.198.145"
-        hostnames:
-        - {name: "isam2.ibm.com"}
-        - {name: "isam2"}
       - addr: "54.237.244.135"
         hostnames:
-        - {name: "isam3.ibm.com"}
-        - {name: "isam3"}
-    - role: config_snmp_monitoring
-      tags: ["snmp"]
-      config_snmp_monitoring_community: "ibm"
-      config_snmp_monitoring_port: 161
+        - {name: "iam1.demo.com"}
+        - {name: "iam"}
     - role: activate_module
       tags: ["activate", "wga"]
       activate_module_id  : "wga"
@@ -81,24 +69,13 @@
       tags: ["runtime", "replication"]
     - role: export_cluster_sign
       export_cluster_sign_filename: "/Users/demo/Documents/Work/TechAcademy/primary.sign"
-
-- name: Setup Restricted Appliances
-  hosts: restricted
-  connection: local
-  vars:
-    reverseproxy_instance_name: "default"
-  roles:
-    - role: add_cluster_node
-      tags: ["cluster", "add"]
-      add_cluster_node_signature_file: "/Users/demo/Documents/Work/TechAcademy/primary.sign"
-      add_cluster_node_restricted:     True
     - role: set_tcpip_tuning
       tags: ["tcpip"]
     - role: create_reverseproxy
       tags: ["reverseproxy", "create"]
       create_reverseproxy_host      : "{{ appliance_name.split('.')[0] }}"
       create_reverseproxy_inst_name : "{{ reverseproxy_instance_name }}"
-      create_reverseproxy_ip_address: "{{ ipv4_1_2_ip_address}}"
+      create_reverseproxy_ip_address: "{{ ipv4_1_1_ip_address}}"
       create_reverseproxy_admin_id  : "{{ sec_master_id }}"
       create_reverseproxy_admin_pwd : "{{ sec_master_pwd }}"
 
