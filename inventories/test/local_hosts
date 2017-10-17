@@ -1,0 +1,15 @@
+[local-primary]
+192.168.186.110
+
+[local-restricted]
+192.168.186.111
+
+[local:children]
+local-primary
+local-restricted
+
+[primary:children]
+local-primary
+
+[restricted:children]
+local-restricted

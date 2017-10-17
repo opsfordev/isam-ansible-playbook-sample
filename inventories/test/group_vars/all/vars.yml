@@ -6,7 +6,7 @@ connection: local
 ansible_connection: local
 
 # Default LMI port for appliances
-lmi_port: 444
+lmi_port: 443
 
 # Logging set to maximum, output will not show until -vvv flag is used
 log_level: DEBUG
