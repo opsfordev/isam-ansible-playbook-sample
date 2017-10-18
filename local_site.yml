@@ -49,8 +49,8 @@
         - {name: "mgt-2"}
       - addr: "192.168.186.120"
         hostnames:
-        - {name: "seal-2.admin.com"}
-        - {name: "seal-2"}
+        - {name: "seal-1.admin.com"}
+        - {name: "seal-1"}
       - addr: "192.168.186.121"
         hostnames:
         - {name: "seal-2.admin.com"}
