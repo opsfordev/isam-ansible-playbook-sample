@@ -58,15 +58,15 @@
     - role: activate_module
       tags: ["activate", "wga"]
       activate_module_id  : "wga"
-      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_9030_ACT_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\\ISAM\\activation\\SAM_9030_ACT_ML') }}"
     - role: activate_module
       tags: ["activate", "mga"]
       activate_module_id  : "mga"
-      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_902_AAC_ACT_CODE_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\\ISAM\\activation\\SAM_902_AAC_ACT_CODE_ML') }}"
     - role: activate_module
       tags: ["activate", "federation"]
       activate_module_id  : "federation"
-      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_9030_FED_ACT_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\\ISAM\\activation\\SAM_9030_FED_ACT_ML') }}"
 
 - name: Setup Primary Appliance
   hosts: primary
