@@ -107,7 +107,7 @@
     - role: set_runtime_replication
       tags: ["runtime", "replication"]
     - role: export_cluster_sign
-      export_cluster_sign_filename: "C:\ISAM\activation\primary.sign"
+      export_cluster_sign_filename: "C:\\ISAM\\activation\\primary.sign"
 
 - name: Setup Restricted Appliances
   hosts: restricted
@@ -117,7 +117,7 @@
   roles:
     - role: add_cluster_node
       tags: ["cluster", "add"]
-      add_cluster_node_signature_file: "C:\ISAM\activation\primary.sign"
+      add_cluster_node_signature_file: "C:\\ISAM\\activation\\primary.sign"
       add_cluster_node_restricted:     True
     - role: set_tcpip_tuning
       tags: ["tcpip"]
