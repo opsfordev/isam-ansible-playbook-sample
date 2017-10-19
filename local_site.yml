@@ -58,15 +58,15 @@
     - role: activate_module
       tags: ["activate", "wga"]
       activate_module_id  : "wga"
-      activate_module_code: "{{ lookup('file', '/home/admin/activations/SAM_9030_ACT_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_9030_ACT_ML') }}"
     - role: activate_module
       tags: ["activate", "mga"]
       activate_module_id  : "mga"
-      activate_module_code: "{{ lookup('file', '/home/admin/activations/SAM_902_AAC_ACT_CODE_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_902_AAC_ACT_CODE_ML') }}"
     - role: activate_module
       tags: ["activate", "federation"]
       activate_module_id  : "federation"
-      activate_module_code: "{{ lookup('file', '/home/admin/activations/SAM_9030_FED_ACT_ML') }}"
+      activate_module_code: "{{ lookup('file', 'C:\ISAM\activation\SAM_9030_FED_ACT_ML') }}"
 
 - name: Setup Primary Appliance
   hosts: primary
@@ -107,7 +107,7 @@
     - role: set_runtime_replication
       tags: ["runtime", "replication"]
     - role: export_cluster_sign
-      export_cluster_sign_filename: "/home/admin/activations/primary.sign"
+      export_cluster_sign_filename: "C:\ISAM\activation\primary.sign"
 
 - name: Setup Restricted Appliances
   hosts: restricted
@@ -117,7 +117,7 @@
   roles:
     - role: add_cluster_node
       tags: ["cluster", "add"]
-      add_cluster_node_signature_file: "/home/admin/activations/primary.sign"
+      add_cluster_node_signature_file: "C:\ISAM\activation\primary.sign"
       add_cluster_node_restricted:     True
     - role: set_tcpip_tuning
       tags: ["tcpip"]
