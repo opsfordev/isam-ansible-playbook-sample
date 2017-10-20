@@ -2,7 +2,6 @@
   hosts: primary
   connection: local
   roles:
-    roles:
     - role: start_config
     - role: config_policyserver
       tags: ["policyserver", "config"]
