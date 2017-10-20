@@ -2,6 +2,8 @@
   hosts: primary
   connection: local
   roles:
+    roles:
+    - role: start_config
     - role: config_policyserver
       tags: ["policyserver", "config"]
       config_policyserver_admin_pwd: "{{sec_master_pwd}}"
