@@ -103,6 +103,7 @@
       tags: ["runtime", "replication"]
     - role: export_cluster_sign
       export_cluster_sign_filename: "/home/admin/activations/primary.sign"
+      tags: ["cluster", "export"]
 
 - name: Setup Restricted Appliances
   hosts: restricted
