@@ -142,4 +142,4 @@
       update_reverseproxy_conf_entries:
         - stanza_id: "server"
           entry_id:  "server-name"
-          value_id:  "mfa"
+          value_id:  "admin"
