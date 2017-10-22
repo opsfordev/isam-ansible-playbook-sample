@@ -1,4 +1,4 @@
-appliance_name: mgt-2.demo.com
+appliance_name: mgt-3.demo.com
 password: "{{vault_password}}"
 
 ipv4_1_1_ip_address: 192.168.186.113

@@ -62,6 +62,8 @@
 - name: Setup Primary Appliance
   hosts: primary
   connection: local
+  vars:
+    reverseproxy_instance_name: "default"
   roles:
     - role: config_policyserver
       tags: ["policyserver", "config"]
