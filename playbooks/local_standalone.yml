@@ -19,6 +19,7 @@
       add_network_ipv4_address                : "{{ ipv4_1_1_ip_address }}"
       add_network_ipv4_maskOrPrefix           : "{{ ipv4_1_1_ip_mask }}"
       add_network_ipv4_allowManagement        : True
+      add_network_ipv4_overrideSubnetChecking : True
       when: ipv4_1_1_ip_address is defined
     - role: add_network_ipv4
       tags: ["ipv4"]
