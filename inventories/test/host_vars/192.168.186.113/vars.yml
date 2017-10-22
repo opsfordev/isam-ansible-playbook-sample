@@ -5,3 +5,7 @@ ipv4_1_1_ip_address: 192.168.186.113
 ipv4_1_1_ip_mask: 24
 ipv4_1_2_ip_address: 192.168.186.130
 ipv4_1_2_ip_mask: 24
+ipv4_1_3_ip_address: 192.168.186.130
+ipv4_1_3_ip_mask: 24
+ipv4_1_4_ip_address: 192.168.186.130
+ipv4_1_4_ip_mask: 24
